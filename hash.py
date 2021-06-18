@@ -1,9 +1,9 @@
 import hashlib, sys, codecs
 
 loginqna = input("Are you logging in or registering?: ")
-if loginqna == "logging in" or "l":
+if loginqna == "logging in":
         logintof = True
-elif loginqna == "registering" or "r":
+elif loginqna == "registering":
         logintof = False 
 else:
         print("Invalid Response")
