@@ -23,7 +23,7 @@ temphash = usrhash.hexdigest()
 #print(logintof)
 
 if logintof == True:
-        passwrd = open("/home/eo/vs-work/py/working-project-1/hashpassreg/passwrd.txt", "r")
+        passwrd = open("./passwrd.txt", "r")
         flag = 0
         index = 0
         for line in passwrd:
@@ -40,7 +40,7 @@ if logintof == True:
                 passwrd.close()
                 sys.exit
 elif logintof == False:
-        passwrda = open("/home/eo/vs-work/py/working-project-1/hashpassreg/passwrd.txt", "a")
+        passwrda = open("./passwrd.txt", "a")
         passwrda.write("\n" + temphash)
         passwrda.close()
         sys.exit()
